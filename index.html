@@ -2,162 +2,122 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - 毛小孩星球</title>
-  <link rel="stylesheet" href="./style.css">
+  <title>CodePen -  網紅廣告平台 </title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css'><link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<!-- main header -->
-<header>
-  <a href="#" class="navbar-brand">毛小孩星球</a>
-  <input type="checkbox" class="navbar-toggle" id="navbar-toggle">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item"><a href="#activity" class="nav-link">近期活動</a></li>
-      <li class="nav-item"><a href="#album" class="nav-link">狗兒相片</a></li>
-      <li class="nav-item"><a href="#adoption" class="nav-link">領養資訊</a></li>
-    </ul>
+<div id="main-app">
+  <nav class="d-flex flex-column justify-content-between align-items-center">
+    <div class="menu d-flex flex-column">
+      <a href="#" class="text-center">AC</a>
+      <a href="#"><i class="fas fa-ad"></i></a>
+    </div>
+    <div class="user-center">
+      <a href="#"><i class="fas fa-user-circle"></i></a>
+    </div>
   </nav>
-  <label class="navbar-toggle-label" for="navbar-toggle">
-    <span class="hamburger"></span>
-  </label>
-</header>
-
-<!-- Activity -->
-<section id="activity" class="activity">
-  <div class="container">
-    <div class="banner-wrapper">
-      <div class="main-banner background-image">
-        <h1 class="banner-title">帶毛小孩回家吧</h1>
-        <p class="banner-description">Bring them back home</p>
-        <a href="#adoption" class="action">領養去</a>
-      </div>
-      <div class="sub-banner sub-banner-left background-image">
-        <h3 class="banner-title">捐款送玩偶</h3>
-        <p class="banner-description">NTD 100</p>
-        <a href="#" class="action">捐款</a>
-      </div>
-      <div class="sub-banner sub-banner-right background-image">
-        <h3 class="banner-title">捐款送狗骨頭</h3>
-        <p class="banner-description">NTD 300</p>
-        <a href="#" class="action">捐款</a>
-      </div>
+  <main id="main-content">
+    <div id="card-list" class="card-list-panel d-flex flex-column align-items-center py-4 scrollbar">
+      <h4>網紅列表</h4>
     </div>
-  </div>
-</section>
-
-<!-- Album -->
-<section id="album">
-  <div class="container">
-    <div class="album-wrapper">
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1511382686815-a9a670f0a512?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=968&q=80" alt="" class="card-img" />
-        <div class="card-text">
-          <h3 class="card-title">藍哥</h3>
-          <p class="card-description">7 歲</p>
+    <div class="right-content">
+      <div id="step-control" class="stepper-panel">
+        <div class="container stepper-container">
+          <div class="step active">
+            <div class="circle-container"></div>
+            <div class="label-container">啟用廣告服務</div>
+          </div>
+          <div class="step">
+            <div class="circle-container"></div>
+            <span class="connect-line"></span>
+            <div class="label-container">廣告設定</div>
+          </div>
+          <div class="step">
+            <div class="circle-container"></div>
+            <span class="connect-line"></span>
+            <div class="label-container">付款帳號設定</div>
+          </div>
         </div>
       </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1554224311-beee415c201f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80" alt="" class="card-img" />
-        <div class="card-text">
-          <h3 class="card-title">小黑</h3>
-          <p class="card-description">2 歲</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="https://images.pexels.com/photos/2737393/pexels-photo-2737393.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="" class="card-img" />
-        <div class="card-text">
-          <h3 class="card-title">花花</h3>
-          <p class="card-description">4 歲</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="https://images.pexels.com/photos/551628/pexels-photo-551628.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="" class="card-img" />
-        <div class="card-text">
-          <h3 class="card-title">皮克</h3>
-          <p class="card-description">3 歲</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="https://images.pexels.com/photos/1490908/pexels-photo-1490908.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="" class="card-img" />
-        <div class="card-text">
-          <h3 class="card-title">哈金</h3>
-          <p class="card-description">6 歲</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="https://images.pexels.com/photos/164186/pexels-photo-164186.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="" class="card-img" />
-        <div class="card-text">
-          <h3 class="card-title">大小姐</h3>
-          <p class="card-description">5 歲</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="https://images.pexels.com/photos/545063/pexels-photo-545063.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="" class="card-img" />
-        <div class="card-text">
-          <h3 class="card-title">公主</h3>
-          <p class="card-description">2 歲</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="https://images.pexels.com/photos/1564506/pexels-photo-1564506.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="" class="card-img" />
-        <div class="card-text">
-          <h3 class="card-title">獨角獸</h3>
-          <p class="card-description">2 歲</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1446231855385-1d4b0f025248?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="" class="card-img" />
-        <div class="card-text">
-          <h3 class="card-title">阿獅</h3>
-          <p class="card-description">3 歲</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1455526050980-d3e7b9b789a4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=625&q=80" alt="" class="card-img" />
-        <div class="card-text">
-          <h3 class="card-title">辛巴</h3>
-          <p class="card-description">2 歲</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1446730853965-62433e868929?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="" class="card-img" />
-        <div class="card-text">
-          <h3 class="card-title">豆皮</h3>
-          <p class="card-description">2 歲</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1513757271804-385fb022e70a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="" class="card-img" />
-        <div class="card-text">
-          <h3 class="card-title">阿瓜</h3>
-          <p class="card-description">2 歲</p>
+      <div class="form-panel scrollbar">
+        <div class="container form-container">
+          <form id="a-form">
+            <div class="form-content">
+              <div class="part">
+                <h4>廣告服務條款</h4>
+                <div class="terms-panel scrollbar my-2">
+                  <div class="terms-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium ante erat, vitae sodales mi varius quis. Etiam vestibulum lorem vel urna tempor, eu fermentum odio aliquam. Aliquam consequat urna vitae ipsum pulvinar, in blandit purus eleifend.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium ante erat, vitae sodales mi varius quis. Etiam vestibulum lorem vel urna tempor, eu fermentum odio aliquam. Aliquam consequat urna vitae ipsum pulvinar, in blandit purus eleifend.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium ante erat, vitae sodales mi varius quis. Etiam vestibulum lorem vel urna tempor, eu fermentum odio aliquam. Aliquam consequat urna vitae ipsum pulvinar, in blandit purus eleifend.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium ante erat, vitae sodales mi varius quis. Etiam vestibulum lorem vel urna tempor, eu fermentum odio aliquam. Aliquam consequat urna vitae ipsum pulvinar, in blandit purus eleifend.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium ante erat, vitae sodales mi varius quis. Etiam vestibulum lorem vel urna tempor, eu fermentum odio aliquam. Aliquam consequat urna vitae ipsum pulvinar, in blandit purus eleifend.</p>
+                  </div>
+                </div>
+                <div class="form-row d-flex align-items-center">
+                  <input id="terms-check" type="checkbox">
+                  <label for="">我已詳細閱讀以上條款內容，並同意接受內容所有款項規定</label>
+                </div>
+              </div>
+              <div class="part d-none">
+                <div class="form-row">
+                  <label>廣告走期</label><input id="a-time-start" name="a-time-start" type="date" class="w-25" required> - <input id="a-time-end" name="a-time-end" type="date" class="w-25" required></div>
+                <div class="form-row"><label>廣告類別</label>
+                  <div class="select-wrapper">
+                    <select name="a-type" id="a-type" required>
+                      <option value="" disabled selected>請選擇廣告類別</option>
+                      <option value="game">遊戲</option>
+                      <option value="fashion">時尚</option>
+                      <option value="travel">旅遊</option>
+                      <option value="shopping">購物</option>
+                      <option value="all">不拘</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <label for="">受眾性別</label>
+                  <div class="d-flex align-items-center">
+                    <input name="ta-gender" type="radio" value="male"><label for="">男</label>
+                    <input name="ta-gender" type="radio" value="female"><label for="">女</label>
+                    <input name="ta-gender" type="radio" value="all"><label for="">不拘</label>
+                  </div>
+                </div>
+                <div class="form-row"><label for="">受眾年齡</label><input type="number" min="13" max="65" value="13"> - <input type="number" min="13" max="65" value="65"></div>
+                <div class="form-row "><label for="">受眾地點</label>
+                  <div class="select-wrapper">
+                    <select name="a-type" id="a-location" required>
+                      <option value="" disabled selected>請選擇受眾地點</option>
+                      <option value="">北部</option>
+                      <option value="">中部</option>
+                      <option value="">南部</option>
+                      <option value="">中部</option>
+                      <option value="">不拘</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="part d-none">
+                <div class="form-row"><label for="">銀行代碼</label><input id="bank-code" type="text" placeholder="請輸入銀行代碼"></div>
+                <div class="form-row"><label for="">銀行帳號</label><input id="bank-account" class="w-50" type="text" placeholder="請輸入銀行帳號"></div>
+                <div class="form-row"><label for="">帳戶姓名</label><input id="account-name" type="text"  placeholder="請輸入帳戶姓名"></div>
+                <div class="form-row"><label for="">備註</label><textarea id="note" class="scrollbar w-50" rows="3"></textarea>
+                </div>
+              </div>
+            </div>
+            <div id="btn-control" class="control-panel d-flex justify-content-end">
+              <button disabled class="btn btn-outline">上一步</button>
+              <button class="btn btn-primary ml-4">下一步</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- Adoption -->
-<section id="adoption">
-  <div class="container">
-    <div class="adoption-wrapper">
-      <img src="https://images.unsplash.com/photo-1522276498395-f4f68f7f8454?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=749&q=80" alt="" class="adoption-image" />
-      <div class="adoption-info">
-        <h3 class="title">領養毛小孩</h3>
-        <p class="description">用領養代替購買，帶毛小孩回家一起生活吧</p>
-        <a href="javascript:void(0)" class="action">領養去</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Footer -->
-<footer>
-  <p>毛小孩星球 &copy; 2020 </p>
-</footer>
+  </main>
+ </div>
 <!-- partial -->
-  
+  <script  src="./script.js"></script>
+
 </body>
 </html>
